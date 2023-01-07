@@ -1,30 +1,31 @@
-https://developer.amazon.com/en-US/docs/alexa/smarthome/understand-the-smart-home-skill-api.html
+[understand-the-smart-home-skill-api](https://developer.amazon.com/en-US/docs/alexa/smarthome/understand-the-smart-home-skill-api.html)
 
-https://developer.amazon.com/en-US/docs/alexa/avs-device-sdk/endpoints.html
+[avs-device-sdk/endpoints](https://developer.amazon.com/en-US/docs/alexa/avs-device-sdk/endpoints.html)
 
-https://developer.amazon.com/en-US/docs/alexa/smarthome/wwa-connection-options.html
+[wwa-connection-options.html](https://developer.amazon.com/en-US/docs/alexa/smarthome/wwa-connection-options.html)
 
-https://developer.amazon.com/en-US/alexa/alexa-skills-kit
-
-
-
-Usage $: sh bash_install_alexa_kit.sh
-Update the package manager
-# sudo yum update -y
-
-Install Node.js and npm
-# curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
-# sudo yum install -y nodejs
-
-Install the AWS SDK for Node.js
-# npm install aws-sdk
-
-Install the Alexa Skills Kit SDK for Node.js
-# npm install ask-sdk
+[alexa-skills-kit](https://developer.amazon.com/en-US/alexa/alexa-skills-kit)
 
 
 
-Yes, you can trigger Alexa routines from your EC2 server using the Alexa Skills Kit (ASK) and the Alexa Skills Kit SDK for Node.js. The ASK is a collection of self-service APIs, tools, documentation, and code samples that makes it easier for you to build and host Alexa skills.
+    Usage $: sh bash_install_alexa_kit.sh
+```
+# Update the package manager
+sudo yum update -y
+
+# Install Node.js and npm
+curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+sudo yum install -y nodejs
+
+# Install the AWS SDK for Node.js
+npm install aws-sdk
+
+# Install the Alexa Skills Kit SDK for Node.js
+npm install ask-sdk
+
+```
+
+You can trigger Alexa routines from your EC2 server using the Alexa Skills Kit (ASK) and the Alexa Skills Kit SDK for Node.js. The ASK is a collection of self-service APIs, tools, documentation, and code samples that makes it easier for you to build and host Alexa skills.
 
 To trigger an Alexa routine from your EC2 server, you will need to create a custom skill that sends a request to the Alexa Routines API to execute the desired routine. You can use the Alexa Skills Kit SDK for Node.js to build and host the skill, and the AWS SDK for Node.js to make requests to the Alexa Routines API from your EC2 server.
 
